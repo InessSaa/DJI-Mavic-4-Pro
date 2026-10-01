@@ -1,0 +1,769 @@
+body {
+  /* font-family: "Exo", sans-serif; */
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #333;
+  margin: 0;
+}
+span,
+a {
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+body::selection {
+  background-color: #8e51ff;
+  color: white;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.container {
+  width: 75%;
+  margin: auto;
+}
+/* -------------------- navbar-------------------------- */
+.navbar {
+  background-color: #f5f3ff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #ddd6ff;
+  padding-inline: 12.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo {
+  width: 15%;
+  text-align: center;
+}
+.logo div {
+  font-size: 35px;
+  height: 40px;
+  width: 40px;
+  background-color: #8e51ff;
+  color: white;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+.float-left .fa-helicopter {
+  font-size: 18px;
+}
+.logo p {
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+}
+.menu .home {
+  color: #8e51ff;
+}
+
+.menu a {
+  position: relative;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.5px;
+  left: 0;
+  bottom: -5px;
+  background-color: #8e51ff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.menu a:hover::after {
+  transform: scaleX(1);
+}
+.menu a:hover {
+  color: #8e51ff;
+}
+
+.menu::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2.5px;
+  bottom: 15px;
+  left: 38px;
+  background-color: #8e51ff;
+}
+.menu {
+  width: 40%;
+  margin-left: 80px;
+  position: relative;
+  font-weight: 500;
+}
+.menu ul li {
+  text-decoration: non;
+  display: inline-block;
+  margin-right: 24px;
+}
+.menu ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #333;
+}
+/* ************** Hero Section ********************** */
+.hero-section {
+  padding-top: 80px;
+  margin-block: 80px;
+}
+
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.clear-fix {
+  clear: both;
+}
+.border-radius {
+  border: 2px solid #e0e2e6;
+  border-radius: 15px;
+}
+.hero .product-image,
+.hero .product-information {
+  float: left;
+  width: calc((100% - 60px) / 2);
+}
+.hero .product-information {
+  float: right;
+}
+.hero .product-information div {
+  margin-bottom: 30px;
+}
+.product-image .border-img {
+  border-radius: 20px;
+  border: 2px solid #e0e2e6;
+  text-align: center;
+  position: relative;
+
+  padding: 20px;
+}
+.product-image img {
+  /* width: 80%; */
+  border-radius: 20px;
+  background-size: cover;
+}
+.product-image .discount {
+  position: absolute;
+  background-color: #8e51ff;
+  padding: 5px 20px;
+  color: white;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  top: 37px;
+  left: 37px;
+}
+.hero .product-information .group-span-one span {
+  background-color: #8e51ff;
+  padding: 5px 10px;
+  color: white;
+  margin-right: 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.hero .product-information h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+
+.hero .product-information h1 span {
+  color: #8e51ff;
+}
+.hero .product-information .group-span-two {
+  vertical-align: middle;
+}
+.hero .product-information .group-span-two .one {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-right: 20px;
+}
+
+.hero .product-information .group-span-two .two {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-right: 20px;
+}
+.hero .product-information .group-span-two .three {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-right: 20px;
+  background-color: #ffe3e3;
+  color: #e7000b;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.hero .product-information .parag {
+  font-size: 16px;
+}
+.hero .product-information .btns {
+  margin-block: 20px;
+  width: 100%;
+}
+.hero .product-information .btns button {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  border: none;
+  padding-block: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.hero .product-information .btns .btn-cart {
+  background-color: #8e51ff;
+  color: white;
+  border: 2px solid #8e51ff;
+}
+.hero .product-information .btns .btn-wishlist {
+  background-color: white;
+  border: 2px solid #e0e2e6;
+}
+.hero .product-information .btns i {
+  margin-right: 15px;
+}
+/* ************** Comparison Table Section ********************** */
+
+.comparison-section {
+  padding-block: 80px;
+  text-align: center;
+  background-color: #f7f5ff;
+}
+
+.title h2 {
+  font-size: 36px;
+  font-weight: 700px;
+  margin: auto;
+}
+.title h2 span {
+  color: #8e51ff;
+}
+.title p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.comparison-section .container-table {
+  border-radius: 30px;
+  padding: 30px;
+  border: 2px solid #e0e2e6;
+  background-color: white;
+  margin-block: 70px;
+}
+.comparison-section table {
+  font-size: 16px;
+
+  border-radius: 30px;
+  width: 100%;
+  background-color: #fff;
+  overflow-x: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.comparison-section table td {
+  padding-top: 20px;
+}
+.comparison-section table h3 {
+  font-size: 18px;
+  font-weight: 700px;
+  margin: 20px 30px;
+  color: #000;
+}
+.comparison-section table tr th span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #6a7282;
+}
+
+.comparison-section table tr th {
+  border-bottom: 2px solid #e0e2e6;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.comparison-section table tr td {
+  border-bottom: 1px solid #e0e2e6;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.comparison-section table tbody .one i {
+  color: #00b8db;
+  margin-right: 10px;
+}
+.comparison-section table tbody .two i {
+  color: #00bba7;
+  margin-right: 10px;
+}
+
+.comparison-section table tbody .three i {
+  color: #00c950;
+  margin-right: 10px;
+}
+.comparison-section table tbody .four i {
+  color: #ff6900;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.comparison-section table tbody .five i {
+  color: #fb2c36;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.comparison-section table tbody .six i {
+  color: #00a6f4;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.comparison-section table tbody .seven i {
+  color: #615fff;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.comparison-section table tbody .eight i {
+  color: #2b7fff;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.comparison-section table tbody .nine i {
+  color: #f4c440;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.comparison-section table tbody span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+table tr .violet {
+  background-color: #ede9fe;
+}
+
+table tr .radius {
+  border-radius: 20px 20px 0 0;
+}
+table tr .radius2 {
+  border-radius: 0 0 20px 20px;
+}
+
+table tfoot .last-row td {
+  border-bottom: none;
+}
+.font-red {
+  color: #f74a00;
+}
+.font-bold {
+  font-size: 20px;
+  font-weight: 600;
+}
+.bg-violet {
+  background-color: #8e51ff;
+  padding: 5px 20px;
+  color: white;
+  border-radius: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+#font-violet {
+  font-size: 14px;
+  font-weight: 500;
+  color: #8e51ff;
+}
+.star-yellow {
+  color: #fdc700;
+  font-size: 18px;
+}
+.star-gray {
+  color: #d1d5dc;
+  font-size: 18px;
+}
+.winner {
+  width: 350px;
+  background-color: white;
+
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  margin: auto;
+}
+
+.winner .troph i {
+  font-size: 30px;
+  width: 30%;
+  padding: 30px;
+  color: #00c950;
+}
+.winner .text {
+  line-height: 8px;
+  padding-top: 10px;
+  color: #00a63e;
+  text-align: left;
+}
+.winner .text p {
+  font-size: 18px;
+  font-weight: 700;
+}
+.winner .text span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* ------------------ Customer Reviews Section ------------- */
+
+.customer-reviews-section .title {
+  margin-bottom: 60px;
+}
+.customer-reviews-section {
+  padding-block: 80px;
+  text-align: center;
+  background-color: white;
+}
+.review-summary {
+  width: 26%;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid #e5e7eb;
+  padding: 32px;
+  position: sticky;
+  top: 50px;
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: #d1d5dc;
+}
+.review-summary .s-bold {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.review-summary p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 7px;
+}
+.bars {
+  margin-block: 30px;
+}
+.bars span {
+  margin: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  vertical-align: middle;
+}
+.bg-gray {
+  width: 215px;
+  height: 12px;
+  background-color: #e5e7eb;
+  border-radius: 5px;
+}
+.bg-yellow {
+  height: 12px;
+  background-color: #e8ab00;
+  border-radius: 5px;
+}
+.bg-yellow-160 {
+  width: 160px;
+}
+.bg-yellow-35 {
+  width: 35px;
+}
+.bg-yellow-8 {
+  width: 11px;
+}
+.bg-yellow-4 {
+  width: 4px;
+}
+.bg-yellow-1 {
+  width: 1px;
+}
+.reviews {
+  margin-top: 30px;
+  padding-inline: 20px;
+}
+.reviews span {
+  font-size: 24px;
+  font-weight: 700;
+}
+.reviews p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.individual-reviews .ind-rev {
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid #e5e7eb;
+  padding: 32px;
+  margin-bottom: 28px;
+}
+.individual-reviews {
+  width: 65%;
+}
+.individual-reviews img {
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid #8e51ff;
+  margin-top: 10px;
+}
+.info {
+  margin-left: 20px;
+  text-align: left;
+  width: fit-content;
+}
+.info h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+.info p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.text-right span {
+  background-color: #ede9fe;
+  padding: 5px 20px;
+  color: #8e51ff;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.text-right p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: right;
+  margin: 0;
+}
+.individual-reviews .parag {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: left;
+}
+.individual-reviews .star-yellow {
+  font-size: 14px;
+}
+.individual-reviews span {
+  font-size: 14px;
+}
+
+.individual-reviews button {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  border-radius: 40px;
+  border: 2px solid #8e51ff;
+  background-color: #8e51ff;
+  padding: 12px 32px;
+  margin-top: 20px;
+}
+.individual-reviews button:hover {
+  color: #8e51ff;
+  border: 2px solid #8e51ff;
+  background-color: white;
+}
+
+/* -----------------Related Products Section------------------------------- */
+.related-products {
+  padding-block: 80px;
+  text-align: center;
+  background-color: #f7f5ff;
+}
+.related-products .cards {
+  padding-block: 40px;
+}
+.related-products .card {
+  float: left;
+  width: calc((100% - 90px) / 4);
+  border: 2px solid #e5e7eb;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-right: 30px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  max-height: 450px;
+}
+.related-products .card img {
+  border-radius: 20px;
+  /* height: 200px; */
+  transition: transform 0.3s ease;
+}
+.related-products .card img:hover {
+  transform: scale(1.05);
+}
+.related-products .card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-block: 20px 0;
+}
+.related-products .card p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.related-products .card .price {
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: 65px;
+}
+.related-products .cards .margin-right {
+  margin-right: 0;
+}
+.related-products .card .add {
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #8e51ff;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+.card .cat {
+  color: white;
+  font-size: 14px;
+  border-radius: 20px;
+  padding-inline: 10px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 2;
+}
+.cards .card-one .cat {
+  background-color: #00bba7;
+}
+.cards .card-two .cat {
+  background-color: #00c950;
+}
+.cards .card-three .cat {
+  background-color: #00b8db;
+}
+.cards .card-four .cat {
+  background-color: #ff6a00;
+}
+
+.related-products .cards button {
+  font-size: 16px;
+  font-weight: 600;
+  color: #8e51ff;
+  border: 2px solid #8e51ff;
+  background-color: white;
+  border-radius: 40px;
+  border: 2px solid #8e51ff;
+  padding: 20px 32px;
+  margin-top: 40px;
+}
+.related-products .cards button:hover {
+  color: white;
+  background-color: #8e51ff;
+}
+
+/* --------------------footer Section--------------------------- */
+.footer {
+  padding-block: 60px;
+  background-color: #101828;
+  color: white;
+}
+.footer .f-links {
+  float: left;
+  width: calc((100% - 120px) / 4);
+  margin-right: 30px;
+}
+.footer p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer ul {
+  padding-inline-start: 0;
+}
+.footer .f-links li a {
+  font-size: 16px;
+  color: #99a1af;
+  font-weight: 400;
+  line-height: 24px;
+  padding-block: 8px;
+}
+.footer .f-links li a:hover {
+  color: #fff;
+}
+.footer .f-links .fa-helicopter {
+  font-size: 20px;
+  background-color: #8e51ff;
+  color: white;
+  border-radius: 12px;
+  padding: 8px;
+}
+.footer .f-links .logo {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 38px;
+}
+.footer .f-links .icons {
+  margin-block: 30px;
+}
+.footer .f-links .icons .fa-brands {
+  background-color: #1e2939;
+  color: white;
+  text-align: center;
+  width: 30px;
+  padding: 10px 6px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+.footer .f-links .icons .fa-facebook-f:hover {
+  background-color: #1877f2;
+}
+.footer .f-links .icons .fa-twitter:hover {
+  background-color: #1da1f2;
+}
+.footer .f-links .icons .fa-instagram:hover {
+  background-color: #e4405f;
+}
+.footer .f-links .icons .fa-youtube:hover {
+  background-color: #ff0000;
+}
+.footer .brands {
+  padding-top: 20px;
+}
+.footer hr {
+  border: 0;
+  height: 1px;
+  background-color: #1e2939;
+}
+.footer img {
+  display: inline-block;
+  margin-right: 15px;
+  height: 20px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
